@@ -1,0 +1,118 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo global */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #666;
+    border-radius: 3px;
+  }
+  
+  /* Estilo das seções */
+  section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    margin-bottom: 10px;
+  }
+  
+  section ul {
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo do formulário de contato */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Media queries para dispositivos móveis */
+  @media only screen and (max-width: 600px) {
+    header h1 {
+      font-size: 20px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    section {
+      padding: 10px;
+    }
+  }
+  
