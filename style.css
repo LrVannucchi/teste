@@ -21,9 +21,14 @@
   
   /* Estilo do cabeçalho */
   header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #333;
     padding: 10px;
     color: #fff;
+    z-index: 999; /* Certifique-se de definir um valor de z-index alto o suficiente para garantir que o cabeçalho fique acima do conteúdo */
   }
   
   header h1 {
@@ -56,6 +61,7 @@
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fff;
+    padding-top: 70px; /* Adicione um preenchimento superior para evitar que o conteúdo seja ocultado pelo cabeçalho fixo */
   }
   
   section h2 {
@@ -98,10 +104,10 @@
     padding: 10px;
     background-color: #333;
     color: #fff;
-  }
+  }  
   
   /* Media queries para dispositivos móveis */
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     header h1 {
       font-size: 20px;
     }
@@ -113,6 +119,18 @@
   
     section {
       padding: 10px;
+    }
+  }
+  
+  /* Media queries para tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+      font-size: 22px;
+    }
+  
+    nav ul li {
+      display: inline-block;
+      margin-bottom: 0;
     }
   }
   
